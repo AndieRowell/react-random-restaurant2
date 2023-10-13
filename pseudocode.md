@@ -45,6 +45,7 @@
 ### Considering Wireframing
 - Keeping it basic!
 - Restraining from full-blown design!!! (but also considering an old wireframe project to help)
+![IMG_0589](https://github.com/AndieRowell/react-random-restaurant2/assets/134252065/859ef7c1-d032-4265-a55e-9f2e02fc34bb)
 
 ### MoSCow
 [!NOTE] Consider **MSCW** - **M**ust have, **S**hould have, **C**ould have, **W**on't have
@@ -68,3 +69,10 @@
 #### Won't have:
 - google map
 - newsletter form
+- probably won't get to fully fleshed out restaurant page
+
+#### TO BE REFACTORED:
+- going to try to consider/use a previous unfinished wireframe idea for inspo
+
+<img width="1049" alt="previous-unfinished-wireframe-idea" src="https://github.com/AndieRowell/react-random-restaurant2/assets/134252065/7e85594e-a314-4706-8cc5-34e8b3d56371">
+

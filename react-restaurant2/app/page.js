@@ -5,7 +5,7 @@ import axios from 'axios'
 import MenuDisplay from '/app/components/molecules/MenuDisplay.js'
 //import Image from 'next/image'
 //import styles from './page.module.css'
-import background from './assets/toasts.jpg'  //for background image
+//import background from './assets/toasts.jpg'  //for background image
 
 const baseURL = "https://www.jsonkeeper.com/b/MDXW";
 
@@ -35,9 +35,16 @@ export default function Home() {
 
 
   return (
-    <main style="
-      backgroundImage: `url(/image.png)`,
-      backgroundRepeat: 'no-repeat'">
+    <main style={{
+      backgroundImage: "url('/assets/toasts.jpg')",
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center center',
+      minHeight: '100vh',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+    }}>
         <div className="container">
           {data.map((item) => (
             <MenuDisplay

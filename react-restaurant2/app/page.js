@@ -3,8 +3,9 @@
 import React, {useState} from 'react'
 import axios from 'axios'
 import MenuDisplay from '/app/components/molecules/MenuDisplay.js'
+import Logo from './components/atoms/Logo'
 //import Image from 'next/image'
-//import styles from './page.module.css'
+import styles from './page.module.css'
 //import background from './assets/toasts.jpg'  //for background image
 
 const baseURL = "https://www.jsonkeeper.com/b/MDXW";
@@ -15,7 +16,7 @@ const baseURL = "https://www.jsonkeeper.com/b/MDXW";
 export default function Home() {
 
   const [data, setData] = React.useState([]);
-  //const [menuItems, setMenuItems] = useState(items); - not sure if i need this or not?
+  //const [menuItems, setMenuItems] = useState(items);
 
 
   React.useEffect(() => {
@@ -45,6 +46,12 @@ export default function Home() {
       justifyContent: 'center',
       alignItems: 'center',
     }}>
+
+      <Logo
+        classes={styles.logo}
+        source="/assets/IMG_0145 copy.PNG"
+      />
+
         <div className="container">
           {data.map((item) => (
             <MenuDisplay
